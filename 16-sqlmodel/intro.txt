@@ -1,0 +1,7 @@
+SQl Model is a Python library bult by the creator of fastapi himself and on top of SQLalchemy and Pydantic, This is still in 
+development phase as of course instructor.
+
+Advatages
+-- Easier to user
+-- clear and easier intregration with fastapi
+-- Pydantci included
