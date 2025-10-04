@@ -1,0 +1,13 @@
+-- A MiddleWare is a Function that interceps every HTTP request and response
+-- It allows us to run code before a request is processed by a specific endpoint and after response is generated , enabling task like
+   adding headers, logging, or mesuring performance
+-- The middleware runs for every HTTP request to any endpoint 
+-- MiddleWare applies globally to all HTTP request (not just a specific endpoints) unless filtered by logic inside the middleware
+   (e.g, checking the request URL)
+
+   -------------- CREATING MIDDLEWARE ----------
+
+   -- Middleware is created using the @app.middleware("http") deorator on a async Function
+   -- Middleware function takes:
+      - request: the incoming HTTP request
+      - call_next: A function that passes the request to the next layer (path operation) and returns the response
