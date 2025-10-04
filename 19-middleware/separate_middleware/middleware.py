@@ -1,3 +1,4 @@
+from fastapi import Request
 
 #First Middleware
 async def first_middleware(request: Request, call_next):
